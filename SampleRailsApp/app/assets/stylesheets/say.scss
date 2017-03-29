@@ -1,3 +1,48 @@
 // Place all the styles related to the Say controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px;
+}
+
+div {
+  padding: 50px;
+  font-size: 36px;
+  color: cornflowerblue;
+  font-family: "Source Code Pro", Monaco, monospace;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #2E2F30;
+  height: 100%;
+  width: 50%;
+}
+
+div:hover{
+  background-color: #ffbe35;
+}
+
+.author {
+  display: none;
+}
+
+div:hover .author{
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  div {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div {
+    font-size: 12px;
+  }
+}
