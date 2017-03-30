@@ -10,9 +10,18 @@ body {
   padding: 150px;
 }
 
-div {
+.anchor_class {
+  font-family: "Comic Sans MS";
+  text-decoration: underline;
+}
+
+.anchor_class:hover {
+  font-family: "Source Code Pro", Monaco, monospace;
+}
+
+.fun-times {
   padding: 50px;
-  font-size: 36px;
+  font-size: 24px;
   color: cornflowerblue;
   font-family: "Source Code Pro", Monaco, monospace;
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
@@ -23,7 +32,7 @@ div {
   width: 50%;
 }
 
-div:hover{
+.fun-times:hover{
   background-color: #ffbe35;
 }
 
@@ -31,7 +40,7 @@ div:hover{
   display: none;
 }
 
-div:hover .author{
+.fun-times:hover .author{
   display: block;
 }
 
